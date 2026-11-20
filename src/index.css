@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-neutral-950 text-neutral-200 antialiased;
+  }
+
+  a:focus-visible,
+  button:focus-visible,
+  input:focus-visible,
+  textarea:focus-visible {
+    outline: 2px solid #fbbf24;
+    outline-offset: 2px;
+  }
+}
+
+@layer components {
+  .link {
+    @apply text-amber-300 underline underline-offset-4 hover:text-amber-200;
+  }
+
+  .heading {
+    @apply text-3xl font-semibold tracking-tight text-white;
+  }
+}
